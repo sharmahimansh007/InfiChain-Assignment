@@ -1,0 +1,25 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.heading{
+    background-image: linear-gradient(to right top, skyblue, black);
+    text-align: center;
+    color: rgb(212, 209, 209);
+    height: 50px;
+}
+
+.container{
+    background-image: linear-gradient(to left bottom, white, crimson);
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.itm-center{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}

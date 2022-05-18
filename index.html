@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@500&family=Square+Peg&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@500&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Crypto Currency Update</title>
+</head>
+
+<body>
+    
+    <h1 class="heading">
+    Crypto Buying & Selling Price
+    </h1>
+
+    <!-- average buy and sell price data information html  -->
+
+    <div class="container">
+
+        <!-- Current time  -->
+        <h2>Time : <span id="time"> </span></h2>
+
+        <!-- average buy price  -->
+        <div class="buycrypto text-center">
+            <h2>Avg requested Buy price : <span id="buy-crypto-price">---</span></h2>
+        </div>
+
+        <!-- average sell price  -->
+        <div class="sellcrypto text-center">
+            <h2>Avg requested Sell price : <span id="sell-crypto-price">---</span> </h2>
+        </div>
+    </div>
+
+    <!-- select tag for BTC-USD LTC-USD  -->
+    <h4 class="text-center">Select BTC-USD or LTC_USD</h4>
+
+    <div class="itm-center">
+        
+    <select id="inp" onchange="fire()">
+        <option value="">---</option>
+        <option value="BTC-USD">BTC-USD</option>
+        <option value="LTC-USD">LTC-USD</option>
+    </select>
+    
+    </div>
+    
+
+    <!-- connecting js file to html  -->
+    <script src="app.js"></script>
+</body>
+</html>
