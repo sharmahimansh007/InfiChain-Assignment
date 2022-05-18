@@ -24,7 +24,7 @@ const requestSend = (query) => {
 // fire function for select tag option for BTC-USD and LTC-USD
 const fire = () => {
     let query =  document.querySelector("#inp").value
-   
+   if(query === "---") return;
     requestSend(query)
   }
 
